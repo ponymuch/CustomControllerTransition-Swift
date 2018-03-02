@@ -5,3 +5,6 @@ Custom View Controller Presentations and Transitions demonstrates using the view
 ### How to Change TransitionType
 
 Just change the InitViewController in the storyboard
+
+### [Objective-C Version](https://developer.apple.com/library/content/samplecode/CustomTransitions/Introduction/Intro.html#//apple_ref/doc/uid/TP40015158)
+
