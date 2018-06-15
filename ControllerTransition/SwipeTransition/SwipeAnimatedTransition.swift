@@ -75,7 +75,7 @@ class SwipeAnimatedTransition: NSObject, UIViewControllerAnimatedTransitioning {
             containerView.insertSubview(toView, belowSubview: fromView)
         }
         
-        UIView.animate(withDuration: duration, animations: {
+        UIView.animate(withDuration: duration, delay: 0, options: .curveEaseIn, animations: {
             if isPresenting {
                 toView.frame = toFrame
             } else {
@@ -88,6 +88,7 @@ class SwipeAnimatedTransition: NSObject, UIViewControllerAnimatedTransitioning {
             }
             transitionContext.completeTransition(!wasCancelled)
         }
+
     }
     
 

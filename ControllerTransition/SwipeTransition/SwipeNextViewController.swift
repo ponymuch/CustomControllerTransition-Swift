@@ -28,7 +28,7 @@ class SwipeNextViewController: UIViewController {
     }
     
     func dismissViewController(sender: UIScreenEdgePanGestureRecognizer?) {
-        if self.transitioningDelegate?.isKind(of: SwipeTransitionDelegate.classForCoder()) == true {
+        if self.transitioningDelegate?.isKind(of: SwipeTransitionDelegate.self) == true {
             let customTransitionDelegate = transitioningDelegate as! SwipeTransitionDelegate
             if let gesture = sender {
                 customTransitionDelegate.gestureRecognizer = gesture
